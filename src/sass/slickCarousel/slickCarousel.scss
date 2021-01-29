@@ -1,0 +1,16 @@
+.slick-dots{
+    transform: translateY(5vh) translateX(50%);
+    width: 50% !important;
+    display: flex !important;
+    justify-content: space-around;
+  
+}
+.slick-dots li{
+    transform: scale(3,3);
+    
+    
+}
+.slick-prev,.slick-next{
+display: none;
+
+}

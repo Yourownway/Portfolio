@@ -1,0 +1,126 @@
+.contact {
+  background-color: $color-contact;
+
+  &__container {
+    max-width: 80vw;
+
+    height: 82vh;
+    padding-top: 16vh;
+    padding-left: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: #{$screen-tablet}) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      width: 100%;
+    }
+  }
+  &__info {
+    
+    display: flex;
+
+    height: 53%;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: #{$screen-tablet}) {
+      width: 60%;
+      height: 80%;
+      justify-content: space-around;
+    }
+  }
+  &__description {
+    max-width: 250px;
+    
+    @media (min-width: #{$screen-tablet}) {
+  max-width: 300px;
+
+}
+
+  }
+  &__form {
+    height: 100%;
+    
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: sansPro;
+    &-container {
+
+  height: 45%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-right: 40%;
+}
+
+    @media (min-width: #{$screen-tablet}) {
+      height: 60%;
+      width: 240px;
+      padding:0%;
+      // margin: auto;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+      &-container {
+      
+        padding-left: 10%;
+        height: 100%;
+        width: 40%;
+     
+      }
+    }
+     
+ & input {
+   margin-top: 2%;
+   height: 20px;
+   @media (min-width: #{$screen-tablet}) {
+  height: 27px;
+ }}
+    & textarea,
+    input {
+      
+      border-radius: 2px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.7);
+      outline: none;
+      font-family: sansPro;
+      font-size: 1.6rem;
+    }
+    & input::placeholder,
+    textarea::placeholder {
+      padding-left: 2%;
+
+      color: $color-contact;
+      font-family: sansPro;
+    }
+  }
+  &__adresse {
+    max-width: 240px;
+    line-height: 2.5rem;
+  }
+}
+.form {
+  &__message {
+    height: 16vh;
+  }
+  &__button {
+    font-family: sansPro;
+    font-size: 1.4rem;
+  outline:none;
+&:hover{
+
+  border:solid white 1px;
+
+}
+  }
+
+  &__arrow {
+    width: 15px;
+  }
+}

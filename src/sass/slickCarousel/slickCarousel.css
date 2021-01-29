@@ -1,0 +1,20 @@
+.slick-dots {
+  -webkit-transform: translateY(5vh) translateX(50%);
+          transform: translateY(5vh) translateX(50%);
+  width: 50% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slick-dots li {
+  -webkit-transform: scale(3, 3);
+          transform: scale(3, 3);
+}
+
+.slick-prev, .slick-next {
+  display: none;
+}
+/*# sourceMappingURL=slickCarousel.css.map */

@@ -1,0 +1,57 @@
+.accueil {
+  background-color: $color-accueil;
+
+  &__container {
+    max-width: 63vw;
+    height: 90vh;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &__title {
+    margin-top: 10%;
+  }
+
+  @for $i from 1 through 3 {
+    &__p#{$i} {
+      max-width: 400px;
+    }
+  }
+  & hr {
+    width: 72%;
+    align-self: flex-start;
+    @media (min-width: #{$screen-tablet}) {
+      width: 60%;
+    }
+  }
+  &__assets {
+    position: relative;
+    z-index: 1;
+  }
+  &__jupiter {
+   width: 40%;
+   height: 40%;
+   
+   bottom: 65%;
+   left: 50%;
+ 
+    @media (max-width: #{$screen-tablet}) {
+   bottom: 55%;
+
+    }
+  }
+  &__rocket {
+    // max-width: 25vw;
+    width: 15%;
+height: 15%;
+
+    bottom: 47%;
+    left: 54%;
+    // right: 35vw;
+    @media (max-width: #{$screen-tablet}) {
+
+}
+
+  }
+}

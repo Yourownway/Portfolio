@@ -1,0 +1,97 @@
+.menu__wrap {
+  width: 32px;
+  height: 30%;
+  margin-left: 10%;
+
+  &__hamburger {
+    position: relative;
+    top: -60%;
+    width: 100%;
+    height: 3px;
+    transition: all 2s;
+    z-index: 1;
+    background-color: red;
+    background-color: $color-font;
+    &::before {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 3px;
+      top: -13px;
+      background-color: inherit;
+      content: "";
+      transition: transform 2s;
+    }
+    &::after {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 3px;
+      top: 10px;
+      background-color: inherit;
+      content: "";
+      transition: transform 2s;
+    }
+  }
+  &--toggler {
+    opacity: 0;
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 10;
+
+    &:checked + .menu__wrap__hamburger {
+      background-color: black;
+      opacity: 100;
+      transform: rotate(135deg);
+    }
+    &:checked + .menu__wrap__hamburger::before {
+      opacity: 100;
+      transform: rotate(90deg) translateX(13px);
+    }
+    &:checked + .menu__wrap__hamburger::after {
+      opacity: 100;
+      transform: rotate(90deg) translateX(-13px);
+    }
+  }
+}
+.menu__wrap--toggler:checked ~ .menu__list {
+  visibility: visible;
+  opacity: 100;
+  transform: translateX(0%);
+}
+.menu__list {
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 75vw;
+  padding: 10% 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $color-font;
+  transform: translateX(-100%);
+  transition: all 2s;
+
+  &__link {
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+
+  &__icons {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__icon {
+    width: 170%;
+    height: auto;
+  }
+}

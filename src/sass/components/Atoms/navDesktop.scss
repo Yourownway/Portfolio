@@ -1,0 +1,29 @@
+.navDesktop {
+  &__list {
+    width: 85%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__link {
+    font-size: 2rem;
+  }
+  &__social {
+    height: 100%;
+    width: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img {
+      height: 30px;
+      width: 40px;
+    }
+    & a {
+      height: auto;
+      width: 40px;
+    }
+  }
+}

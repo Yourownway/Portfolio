@@ -1,0 +1,23 @@
+.canvas__container {
+  border: solid white;
+  display: flex;
+  margin: auto;
+}
+.canvas {
+  z-index: 1;
+
+  border: solid red;
+  // top: 50px;
+  // transform: translateY(-50%);
+}
+.canvasMap {
+  // background-color: black;
+  transform: translateX(-100%);
+}
+// @keyframes translateCaneva {
+//   0% {
+//   }
+//   100% {
+//     transform: rotateZ(360deg) translateX(200px);
+//   }
+// }

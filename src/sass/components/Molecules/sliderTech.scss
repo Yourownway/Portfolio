@@ -1,0 +1,43 @@
+.projects__sliderTech
+{
+&__container {
+ 
+  width: 80%;
+ align-self: center;
+
+}
+&__slide{
+ 
+  border-radius: 10px;
+
+  
+
+margin: auto;
+text-align: center;
+outline: none;
+
+}
+
+
+&__img{
+   border-radius: 16px;
+   border: solid 2px black ;
+
+  box-shadow: 2px 5px 5px black ;
+
+   background-color: $color-font;
+   height:7vh; 
+   width: 60%;
+   padding:5% 13%;
+   
+  
+   @media (min-width: #{$screen-tablet}) {
+   margin-bottom: 5%;
+}
+
+
+
+  
+}
+}
+

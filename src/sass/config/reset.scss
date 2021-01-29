@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+}
+html {
+  outline: none;
+  border:none;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media (min-width: #{$screen-tablet}) {
+    font-size: 80%;
+  }
+}
+body {
+  height: 100%;
+
+
+  font-family: sansPro;
+  color: $color-font;
+  background-color: $color-contact;
+  
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  // scroll-snap-type:y mandatory;
+
+}
+section {
+  height: 100vh;
+  scroll-snap-align: end; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.3rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4{font-size: 1.7rem;}
+p {
+  font-size: 1.4rem;
+}
+button {
+  color: $color-font;
+  background: none;
+  border: none;
+}
+
+
+//reset carousel
+// .slick-slider{
+  
+// }

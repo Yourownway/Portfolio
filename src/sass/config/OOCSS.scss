@@ -1,0 +1,96 @@
+.color-accueil {
+  color: $color-accueil;
+}
+
+.color-profil {
+  color: $color-profil;
+}
+.color-projects {
+  color: $color-projects;
+}
+.color-contact {
+  color: $color-contact;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+}
+.title__span {
+  letter-spacing: 1.2px;
+  -webkit-text-stroke: 1px $color_font;
+  color: transparent;
+}
+.invisible {
+  opacity: 0;
+}
+.star {
+
+  height: 10%;
+  animation: star  3s infinite linear;
+  &__container-accueil {
+    width: 90vw;
+    z-index: 0;
+
+    height: 100vh;
+    margin-left: 5vw;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  &__container-profil {
+    width: 90vw;
+    z-index: 0;
+
+    height: 100vh;
+    margin-left: 5vw;
+    position: absolute;
+    pointer-events: none;
+    top: 100%;
+    left: 0;
+    z-index: 0;
+  }
+  &__container-contact {
+    width: 90vw;
+    z-index: 0;
+
+    height: 100vh;
+    margin-left: 5vw;
+    position: absolute;
+    pointer-events: none;
+    top: 300%;
+    left: 0;
+    z-index: 0;
+  }
+
+  &__col1 {
+    margin-top: 16vh;
+
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col2 {
+    margin-top: 20vh;
+    height: 25vh;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  &__element1 {
+    align-self: flex-end;
+  }
+  &__element2 {
+  }
+  &__element3 {
+    align-self: flex-start;
+  }
+  &__element4 {
+  }
+  &__element5 {
+  }
+  &__element6 {
+  }
+}
