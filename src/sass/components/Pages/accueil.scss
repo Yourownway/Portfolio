@@ -3,14 +3,14 @@
 
   &__container {
     max-width: 63vw;
-    height: 90vh;
-     
+    height: 85vh;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   &__title {
-    margin-top: 10%;
+    margin-top: 15vh;
   }
 
   @for $i from 1 through 3 {
@@ -30,28 +30,25 @@
     z-index: 1;
   }
   &__jupiter {
-   width: 40%;
-   height: 40%;
-   
-   bottom: 65%;
-   left: 50%;
- 
-    @media (max-width: #{$screen-tablet}) {
-   bottom: 55%;
+    width: 40%;
+    height: 40%;
 
+    bottom: 65%;
+    left: 50%;
+
+    @media (max-width: #{$screen-tablet}) {
+      bottom: 55%;
     }
   }
   &__rocket {
     // max-width: 25vw;
     width: 15%;
-height: 15%;
+    height: 15%;
 
     bottom: 47%;
     left: 54%;
     // right: 35vw;
     @media (max-width: #{$screen-tablet}) {
-
-}
-
+    }
   }
 }

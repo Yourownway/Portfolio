@@ -22,5 +22,19 @@ module.exports = {
       links: { github: "#", site: "#" },
       tech: ["ReactJs", "Js", "Html", "Css", "Sass"],
     },
+    {
+      title: "Portfolio",
+      img: "netflix",
+      description: "J'ai réalisé ce protfolio en React",
+      links: { github: "#", site: "#" },
+      tech: ["ReactJs", "Js", "Html", "Css", "Sass"],
+    },
+    {
+      title: "Portfolio",
+      img: "netflix",
+      description: "J'ai réalisé ce protfolio en React",
+      links: { github: "#", site: "#" },
+      tech: ["ReactJs", "Js", "Html", "Css", "Sass"],
+    },
   ],
 };

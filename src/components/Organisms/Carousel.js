@@ -1,70 +1,53 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import Slide from "../Molecules/Slide";
-import SlideDesktop from "../Molecules/SlideDesktop";
-import useMediaQuery from "../../Hooks/useMediaQuery";
-import projectsData from "../../FakeDb/projectsData";
-import { NextArrow, PrevArrow } from "../../assets/img/slide/index";
+import React, { useEffect, useRef, useState } from "react";
+import { data as projects } from "../../FakeDb/projectsData";
 export default function Carousel() {
-  const tablet = useMediaQuery("(max-width: 768px)");
-  const settings = {
-    customPaging: function (i) {
-      if (!tablet) {
-        return (
-          <a>
-            <img
-              style={{ width: "auto", height: "100%" }}
-              src={`projects/netflix.jpg`}
-            />
-          </a>
-        );
-      } else {
-        return <button>{i + 1}</button>;
-      }
-    },
+  const refCarousel = useRef(null);
 
-    dotsClass: "slick-dots slick-thumb",
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-
-    nextArrow: <NextArrow className="projects__carousel__arrow" />,
-    prevArrow: <PrevArrow className="projects__carousel__arrow" />,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          // customPaging: (dots) => <ul>{dots}</ul>,
-          // appendDots: (dots) => <ul>{dots}</ul>,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          dots: true,
-        },
-      },
-    ],
+  const cellCount = projects.length;
+  let selectedIndex = 0;
+  let translate, angle;
+  const rotateCarousel = () => {
+    let angle = (selectedIndex / cellCount) * -360;
+    let child = refCarousel.current.children;
+    translate = Math.round(
+      (child[0].clientWidth / 2 / Math.tan(Math.PI / cellCount)) * 2
+    );
+    console.log(translate, "ici");
+    refCarousel.current.style.transform =
+      `translateZ(-${translate}px) rotateY(` + angle + "deg)";
   };
+  const handleChange = (i) => {
+    selectedIndex += i;
+    rotateCarousel();
+  };
+  useEffect(() => {
+    let child = refCarousel.current.children;
+    translate =
+      Math.round(child[0].clientWidth / 2 / Math.tan(Math.PI / cellCount)) * 2;
+
+    for (let i = 0; i < projects.length; i++) {
+      angle = (i / cellCount) * 360;
+
+      console.log(angle);
+      console.log(translate, "translate");
+      child[i].style.transform =
+        " rotateY(" + angle + `deg) translateZ(${translate}px)`;
+    }
+  }, []);
 
   return (
-    <div className="projects__carousel__container">
-      {tablet ? (
-        <Slider className="projects__carousel__content" {...settings}>
-          {projectsData.data.map((data) => (
-            <Slide data={data} />
+    <>
+      <div className="projects__scene">
+        <div ref={refCarousel} className="projects__carousel">
+          {projects.map((x) => (
+            <div key={projects.indexOf(x)} className="projects__carousel__cell">
+              {projects.length}
+            </div>
           ))}
-        </Slider>
-      ) : (
-        <Slider className="projects__carouselDesktop__content" {...settings}>
-          {projectsData.data.map((data) => (
-            <SlideDesktop data={data} />
-          ))}
-        </Slider>
-      )}
-    </div>
+        </div>
+      </div>
+      <button onClick={() => handleChange(1)}>NEXT</button>
+      <button onClick={() => handleChange(-1)}>Prev</button>
+    </>
   );
 }

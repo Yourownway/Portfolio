@@ -8,7 +8,7 @@ import {
   planete,
   moon,
 } from "../../assets/img/profil/index";
-import { star } from "../../assets/img/index";
+// import { star } from "../../assets/img/index";
 import ModalesProfil from "../Organisms/ModalesProfil";
 
 export default function Profil() {
@@ -37,7 +37,8 @@ export default function Profil() {
                 style={backgroundMoon}
                 onClick={() => {
                   setFromation(!formation);
-                }}>
+                }}
+              >
                 <Formation className="profil__img" />
               </div>
               <h4 className="profil__description">Formation</h4>
@@ -48,7 +49,8 @@ export default function Profil() {
                 style={backgroundMoon}
                 onClick={() => {
                   setCompetances(!competances);
-                }}>
+                }}
+              >
                 <Skills className="profil__img" />
               </div>
               <h4 className="profil__description">Compétences</h4>
@@ -61,7 +63,8 @@ export default function Profil() {
                 onClick={() => {
                   setAbout(!about);
                 }}
-                style={backgroundMoon}>
+                style={backgroundMoon}
+              >
                 <About className="profil__img" />
               </div>
               <h4 className="profil__description">A propos de moi</h4>
@@ -69,10 +72,11 @@ export default function Profil() {
             <div className="profil__moon__container">
               <div
                 className="profil__download profil__moon"
-                style={backgroundMoon}>
+                style={backgroundMoon}
+              >
                 <Download className="profil__img" />
               </div>
-              <h4 className="profil__description">Telecharger mon CV</h4>
+              <h4 className="profil__description">Mon CV</h4>
             </div>
           </div>
         </div>

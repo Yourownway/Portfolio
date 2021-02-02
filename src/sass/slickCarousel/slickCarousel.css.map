@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,SAAS,EAAE,eAAe,CAAC,eAAe;EAC1C,KAAK,EAAE,cAAc;EACrB,OAAO,EAAE,eAAe;EACxB,eAAe,EAAE,YAAY;CAEhC;;AACD,AAAA,WAAW,CAAC,EAAE,CAAA;EACV,SAAS,EAAE,WAAU;CAGxB;;AACD,AAAA,WAAW,EAAC,WAAW,CAAA;EACvB,OAAO,EAAE,IAAI;CAEZ",
-    "sources": [
-        "slickCarousel.scss"
-    ],
-    "names": [],
-    "file": "slickCarousel.css"
-}
