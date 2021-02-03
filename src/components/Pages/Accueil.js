@@ -27,14 +27,14 @@ export default function Accueil() {
 
       <div className="star__container-accueil">
         <div className="star__col1">
-          <img className="star__element1 star" src={star} />
+          <img className="star__element1 star" src={star} alt="star" />
           {/* <img className="star__element2 star" src={star} /> */}
-          <img className="star__element3 star" src={star} />
+          <img className="star__element3 star" src={star} alt="star" />
         </div>
         <div className="star__col2">
-          <img className="star__element1 star" src={star} />
-          <img className="star__element2 star" src={star} />
-          <img className="star__element3 star" src={star} />
+          <img className="star__element1 star" src={star} alt="star" />
+          <img className="star__element2 star" src={star} alt="star" />
+          <img className="star__element3 star" src={star} alt="star" />
         </div>
       </div>
     </section>
