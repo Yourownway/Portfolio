@@ -31,7 +31,8 @@ export default function ModaleCompetances({ competances, setCompetances }) {
     <div className="profil__modale">
       <div
         className="profil__modale__close"
-        onClick={() => setCompetances(false)}>
+        onClick={() => setCompetances(false)}
+      >
         <div></div>
       </div>
       <div className="modale__competances__container">
@@ -44,7 +45,7 @@ export default function ModaleCompetances({ competances, setCompetances }) {
               <h3>Back</h3>
             </li>
             <li onClick={() => setCount(3)}>
-              <h3>Analyse</h3>
+              <h3>Conception</h3>
             </li>
           </ul>
         </div>
@@ -52,7 +53,8 @@ export default function ModaleCompetances({ competances, setCompetances }) {
           <div
             className={`modale__competances__cube ${
               count === 1 ? "front" : ""
-            } ${count === 2 ? "back" : ""} ${count === 3 ? "analyse" : ""}`}>
+            } ${count === 2 ? "back" : ""} ${count === 3 ? "analyse" : ""}`}
+          >
             <div className={`cube cube__front`}>
               <div className="modale__competances__grid ">
                 <p className="grid__competances row1__p">Librairie:</p>{" "}

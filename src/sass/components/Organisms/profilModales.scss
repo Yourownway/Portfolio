@@ -116,8 +116,9 @@
       width: 90%;
       margin: auto;
       display: flex;
-
+      justify-content: center;
       align-items: center;
+      line-height: 2.5rem;
 
       color: $color-font;
       transition: color 0.5s linear 1s;
@@ -357,8 +358,6 @@
   &.row1 {
     &__p {
       grid-row: 1;
-
-      animation: translateX-rows 1s 3s forwards;
     }
     &__ul {
       grid-row: 1;
@@ -367,7 +366,6 @@
   &.row2 {
     &__p {
       grid-row: 2;
-      animation: translateX-rows 1s 3.5s forwards;
     }
     &__ul {
       grid-row: 2;
@@ -376,7 +374,6 @@
   &.row3 {
     &__p {
       grid-row: 3;
-      animation: translateX-rows 1s 4s forwards;
     }
     &__ul {
       grid-row: 3;
@@ -385,7 +382,6 @@
   &.row4 {
     &__p {
       grid-row: 4;
-      animation: translateX-rows 1s 4.5s forwards;
     }
     &__ul {
       grid-row: 4;

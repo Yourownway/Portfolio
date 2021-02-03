@@ -12,7 +12,6 @@ export default function Carousel() {
     translate = Math.round(
       (child[0].clientWidth / 2 / Math.tan(Math.PI / cellCount)) * 2
     );
-    console.log(translate, "ici");
     refCarousel.current.style.transform =
       `translateZ(-${translate}px) rotateY(` + angle + "deg)";
   };
@@ -28,8 +27,6 @@ export default function Carousel() {
     for (let i = 0; i < projects.length; i++) {
       angle = (i / cellCount) * 360;
 
-      console.log(angle);
-      console.log(translate, "translate");
       child[i].style.transform =
         " rotateY(" + angle + `deg) translateZ(${translate}px)`;
     }

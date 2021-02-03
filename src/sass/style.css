@@ -615,7 +615,9 @@ button {
   width: 90%;
   margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
+  line-height: 2.5rem;
   color: #ffffff;
   transition: color 0.5s linear 1s;
 }
@@ -825,28 +827,24 @@ button {
 }
 .grid__competances.row1__p {
   grid-row: 1;
-  animation: translateX-rows 1s 3s forwards;
 }
 .grid__competances.row1__ul {
   grid-row: 1;
 }
 .grid__competances.row2__p {
   grid-row: 2;
-  animation: translateX-rows 1s 3.5s forwards;
 }
 .grid__competances.row2__ul {
   grid-row: 2;
 }
 .grid__competances.row3__p {
   grid-row: 3;
-  animation: translateX-rows 1s 4s forwards;
 }
 .grid__competances.row3__ul {
   grid-row: 3;
 }
 .grid__competances.row4__p {
   grid-row: 4;
-  animation: translateX-rows 1s 4.5s forwards;
 }
 .grid__competances.row4__ul {
   grid-row: 4;
