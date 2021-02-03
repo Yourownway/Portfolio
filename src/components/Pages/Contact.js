@@ -24,18 +24,18 @@ export default function Contact() {
             <input className="form__email" type="text" placeholder="Email" />
             <textarea className="form__message" placeholder="Message" />
             <button className="form__button">
-              ENVOYER <img className="form__arrow" src={arrow} />
+              ENVOYER <img className="form__arrow" src={arrow} alt="arrow" />
             </button>
           </form>
         </div>
         <div className="star__container-contact">
           <div className="star__col1">
-            <img className="star__element1 star" src={star} />
+            <img className="star__element1 star" src={star} alt="star" />
             {/* <img className="star__element2 star" src={star} /> */}
-            <img className="star__element3 star" src={star} />
+            <img className="star__element3 star" src={star} alt="star" />
           </div>
           <div className="star__col2">
-            <img className="star__element1 star" src={star} />
+            <img className="star__element1 star" src={star} alt="star" />
             {/* <img className="star__element2 star" src={star} /> */}
             {/* <img className="star__element3 star" src={star} /> */}
           </div>

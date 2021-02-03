@@ -16,9 +16,10 @@ export default function Profil() {
   const [competances, setCompetances] = useState(false);
   const [about, setAbout] = useState(false);
   const phone = useMediaQuery("(max-width: 600px)");
-  const backgroundPlanetePhone = {
-    background: "url(" + planete + ") no-repeat center/55%",
-  };
+  // eslint-disable-next-line
+  // const backgroundPlanetePhone = {
+  //   background: "url(" + planete + ") no-repeat center/55%",
+  // };
   const backgroundPlanete = {
     background: "url(" + planete + ") no-repeat center/45%",
   };

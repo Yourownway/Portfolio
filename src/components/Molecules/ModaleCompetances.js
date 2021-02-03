@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { moon, planete } from "../../assets/img/profil";
+// import { moon, planete } from "../../assets/img/profil";
 import {
   ReactJs,
   Js,
@@ -21,12 +21,12 @@ import {
 
 export default function ModaleCompetances({ competances, setCompetances }) {
   const [count, setCount] = useState(1);
-  const backgroundPlanete = {
-    background: "url(" + planete + ") no-repeat center",
-  };
-  const backgroundMoon = {
-    background: "url(" + moon + ") no-repeat content-box center/100%",
-  };
+  // const backgroundPlanete = {
+  //   background: "url(" + planete + ") no-repeat center",
+  // };
+  // const backgroundMoon = {
+  //   background: "url(" + moon + ") no-repeat content-box center/100%",
+  // };
   return (
     <div className="profil__modale">
       <div

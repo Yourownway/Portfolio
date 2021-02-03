@@ -1,6 +1,6 @@
 import React from "react";
 
-import useMediaQuery from "../../Hooks/useMediaQuery";
+// import useMediaQuery from "../../Hooks/useMediaQuery";
 import Search from "../Atoms/Search";
 
 import Carousel from "../Organisms/Carousel";
